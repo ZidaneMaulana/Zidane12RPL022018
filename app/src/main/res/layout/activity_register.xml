@@ -4,24 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".register"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="LOGIN"
+        android:text="REGISTER"
         android:layout_marginTop="250px"
         android:textSize="25dp"
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/nama"
         android:layout_width="396dp"
         android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginTop="50px"
+        android:hint="Nama"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/username"
+        android:layout_width="396dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30px"
         android:hint="Username"
+        android:inputType="textPassword"
         android:padding="15dp" />
 
     <EditText
@@ -34,15 +45,44 @@
         android:inputType="textPassword"
         android:padding="15dp" />
 
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/noktp"
+        android:layout_width="396dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30px"
+        android:hint="No KTP"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/nohp"
+        android:layout_width="396dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30px"
+        android:hint="No HP"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/alamat"
+        android:layout_width="396dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30px"
+        android:hint="Alamat"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+
     <Button
         android:layout_gravity="center"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:hint="LOGIN"
+        android:hint="REGISTER"
         android:textColorHint="@color/colorWhite"
         android:id="@+id/btn_login"
         android:layout_marginTop="10dp"
-        android:onClick="dashboardActivity"
         android:background="@color/colorBlue"/>
 
     <LinearLayout
@@ -59,8 +99,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register"
-            android:onClick="registerActivity"
+            android:text="Login"
+            android:onClick="loginActivity"
             android:textColor="@color/colorBlue"/>
     </LinearLayout>
 
